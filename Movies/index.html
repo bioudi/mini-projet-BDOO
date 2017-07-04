@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MILLENNIUM</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <style>
+    #ss:focus{
+      border-color: #BD3D41;
+    }
+    .nav-item a.is-tab.is-active, a.nav-item.is-tab.is-active {
+      border-bottom: 3px solid #BD3D41;
+      color: #BD3D41;
+      padding-bottom: calc(.75rem - 3px);
+    }
+    .nav-item a.is-tab:hover, a.nav-item.is-tab:hover {
+      border-bottom-color: #BD3D41;
+      border-top-color: transparent;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <navigate></navigate>
+      <router-view></router-view>
+    </div>
+  </body>
+</html>
